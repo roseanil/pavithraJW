@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Pavithra Jewellery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.marker {
+display: block;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+padding: 0;
+}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COLLECTIONS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COLLECTIONS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="home.png" style="width:100%">
+    <div class="w3-display-left w3-container w3-text-white w3-padding-15 w3-hide-small">
+    <!--  <h3>PAVITHRA JEWELLERY</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   -->
+    </div>
+  </div>
+  <!--<div class="mySlides w3-display-container w3-center">
+    <img src="C:\Users\rose1\Documents\webite\sample.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+-->
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">ABOUT US</h2>
+    <p class="w3-opacity"><i>Since 1995</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+  <!--    <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div> -->
+    </div>
+  </div>
+
+  <!-- The collection Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">OUR COLLECTION</h2>
+      <p class="w3-opacity w3-center"><i>Crafted just for you!</i></p><br>
+
+      
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="collection/collection2.jpg" alt="New York" style="width:85%">
+        </div>
+         <div class="w3-third w3-margin-bottom">
+          <img src="collection/collection1.jpg" alt="New York" style="width:85%">
+        </div>
+      <div class="w3-third w3-margin-bottom">
+          <img src="collection/collection3.jpg" alt="New York" style="width:85%">
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+         <p><button onclick="window.location.href='collection.html'" class="w3-padding-large w3-margin-bottom"><b>SEE MORE »</b></button></p>
+         </div>
+      </div>
+    </div>
+  </div> 
+  <!--
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="sample.jpg" style="width:100%">
+    <img src="sample.jpg" style="width:100%">
+    <img src="sample.jpg" style="width:100%">
+    <img src="sample.jpg" style="width:100%">
+    <img src="sample.jpg" style="width:100%">
+    <img src="sample.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/coffee.jpg" style="width:100%">
+    <img src="/w3images/bridge.jpg" style="width:100%">
+    <img src="/w3images/notebook.jpg" style="width:100%">
+    <img src="/w3images/london.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/workbench.jpg" style="width:100%">
+    <img src="/w3images/gondol.jpg" style="width:100%">
+    <img src="/w3images/skies.jpg" style="width:100%">
+    <img src="/w3images/lights.jpg" style="width:100%">
+    <img src="/w3images/workshop.jpg" style="width:100%">
+  </div>
+</div>
+    </div>
+  </div> -->
+  <!-- collecton Modal 
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Reach out to Us!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Perumbavoor, Kerala<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91-484-2525503<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: support@pavithrajewellery.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form method="post" name="myemailform" action="form-to-email.php">
+          <div class="w3-row-padding" style="margin:0 -8px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" name="send_message_btn" type="submit">SEND</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<div id="map" style="width:100%;height:400px;"></div>
+
+
+<!--Footer --> 
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<!-- //map
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+-->
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zZTEyMzQiLCJhIjoiY2tkc2I0bmw5MDZ2eTJ2cGNuZGoxaWdqciJ9.SzmmaSo9kAjO3kN7oEyNig';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [76.4730769,10.1149485],
+zoom: 18
+});
+ 
+ 
+var marker = new mapboxgl.Marker()
+.setLngLat([76.4730769,10.1149485])
+.setPopup(new mapboxgl.Popup().setHTML('<strong>Pavithra Jewellery</strong></br><a href="https://www.google.com/maps/place/Pavithra+Jewellery/@10.1147723,76.4708513,17z/data=!3m1!4b1!4m5!3m4!1s0x3b07e26155555555:0x6dcfac6146f6f081!8m2!3d10.114767!4d76.47304" target="_blank" title="Opens in a new window">Click here for directions</a>')) // add popup
+.addTo(map);
+
+
+ 
+map.on('load', function() {
+
+// Add a layer showing the places.
+map.addLayer({
+'id': 'places',
+'type': 'symbol',
+'source': 'places',
+'layout': {
+'icon-image': '{icon}-15',
+'icon-allow-overlap': true
+}
+});
+ 
+// When a click event occurs on a feature in the places layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click', 'places', function(e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'places', function() {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'places', function() {
+map.getCanvas().style.cursor = '';
+});
+});
+/*
+var monument = [76.4730769,10.1149485];
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: monument,
+    zoom: 15
+});
+
+// create the popup
+var popup = new mapboxgl.Popup(
+  {offset:[28, 0]}
+).setText(
+  'Pavithra Jewellery.  <a href="http://madmens5finale.eventbrite.com/" target="_blank" </a>'
+);
+// create the marker
+let marker = new mapboxgl.Marker().setLngLat(monument);
+
+// get the marker element
+const element = marker.getElement();
+element.id = 'marker'
+// hover event listener
+element.addEventListener('mouseenter', () => popup.addTo(map));
+element.addEventListener('mouseleave', () => popup.remove());
+
+// add popup to marker
+marker.setPopup(popup);
+// add marker to map
+marker.addTo(map);
+// Automatic Slideshow - change image every 4 seconds
+
+*/
+// var html = '<div class="marker-popup">Pavithra Jewellery, Perumbavoor .</div>';
+
+// var customPopUp = new mapboxgl.Popup(
+//     {
+//        anchor: 'bottom',   // To show popup on top
+//        offset: { 'bottom': [0, -10] },  // To prevent popup from over shadowing the marker.
+//        closeOnClick: false   // To prevent close on mapClick.
+//     }
+// ).setHTML(html); // You can set any valid HTML.
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsu6DPnbp5LD7b3KkKQcqnzXnbKD57j1w&callback=myMap"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+
+</body>
+</html>
